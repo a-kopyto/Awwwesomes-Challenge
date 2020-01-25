@@ -1,0 +1,17 @@
+body {
+    height: 350vh;
+}
+
+header {
+    
+    height: 60vh;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+}
+
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
