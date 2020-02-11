@@ -1,17 +1,126 @@
+/*MAIN*/
+
+* {
+    margin: 0;
+}
+
 body {
-    height: 350vh;
+    font-family: 'Space Mono', serif;
+}
+h1, h2, h3 {
+    font-family: 'Radley', serif;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
 }
 
-header {
-    
-    height: 60vh;
-    background-image: url(../img/banner.jpg);
-    background-attachment: fixed;
+h1 {
+    color: white;
+    font-size: 200px;
+    letter-spacing: 7px;
 }
 
-li {
-    list-style: none;
+h2 {
+    font-size: 40px;
+    color: black;
+    margin: 30px 0 10px 0;
 }
-li a {
+
+h2.inTouch {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #F04D23;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+a {
+    color: #F04D23;
     text-decoration: none;
 }
+
+/*HEADER*/
+header {
+    height: 80vh;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+}
+nav li {
+    font-family: 'Space Mono', serif;
+    padding: 0px 15px;
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin: 20px 30px;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+p.layout {
+    position: absolute;
+    bottom: 10px;
+    font-size: 10px
+}
+
+
+/*II section*/
+.list li {
+    font-size: 'Radley', serif;
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+p.contact {
+    font-size: 18px;
+}
+
+footer {
+  background: #F2F2F2;
+}
+
+/*ICONS*/
+.icons {
+    position: fixed;
+    top: 50vh;
+}
+.icons li {
+    list-style: none;
+    width: 40px;
+}
+
