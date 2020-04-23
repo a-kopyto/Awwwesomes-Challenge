@@ -49,6 +49,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /*HEADER*/
 header {
     height: 80vh;
@@ -90,13 +94,16 @@ header p {
 }
 header p a {
     color: white;
-    text-decoration: underline;
 }
 
 p.layout {
     position: absolute;
     bottom: 10px;
-    font-size: 10px
+    font-size: 10px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    left: 10px;
+    bottom: 0;
 }
 
 
@@ -136,10 +143,6 @@ p.contact {
     top: -200px;
 }
 
-#aboutMe a {
-    text-decoration: underline;
-}
-
 /*Projects*/
 #projects p {
     padding: 8px 0;
@@ -151,16 +154,41 @@ p.contact {
     padding: 15px 0;
 }
 
+/* stayInTouch */
+#contact div {
+    text-align: center;
+    padding: 80px 0;
+}
+
+#contact div p {
+    padding: 40px 0 0 0;
+}
+
+.inTouch {
+    position: relative;
+}
+
+.inTouch::before {
+    position: absolute;
+    content: url(../img/line.svg);
+    width: 65vw;
+    z-index: -1;
+    top: 50px;
+    left: 5vw;
+}
+
 
 /*FOOTER*/
 footer {
-  background: #f2f2f2
+  background: #f2f2f2;
+  text-align: center;
+  padding: 25px 0;
 }
 
 /*ICONS*/
 .icons {
     position: fixed;
-    top: 50vh;
+    top: 37vh;
 }
 .icons li {
     list-style: none;
